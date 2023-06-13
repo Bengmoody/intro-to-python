@@ -2,20 +2,31 @@
 
 ## Section A
 # 1. Ask for the user's name, if they are called "Bob", print "Welcome Bob!".
-
+# name = input("Please enter your name: ")
+# if name=="Bob":
+#     print("Welcome Bob")
 
 
 # 2. Ask for the user's name, if they are not called "Alice", print "You're not Alice!".
-
+# users_name = input("Please enter your name: ")
+# if (users_name.lower() != "alice"):
+#   print("You're not Alice")
 
 
 # 3. Ask the user for a password, if they enter the password "qwerty123", print "You have successfully logged in". 
 #   If they get it wrong, print "Password failure".
-
-
+# password = input("Please enter a password: ")
+# if (password == "qwerty123"):
+#   print("You are now logged in.")
+# else:
+#   print("You have not logged in")
 
 # 4. Ask the user to enter a number, if the number is even, print "Even", otherwise print "Odd".
-
+# number = int(input("Please enter an integer to find out if it is even or odd: "))
+# if ((number % 2) == 0):
+#   print("even")
+# else:
+#   print("odd")
 
 
 # 5. Ask the user for 2 different numbers, if the total of the two numbers is over 21, print "Bust" otherwise print "Safe"
