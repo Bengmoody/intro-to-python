@@ -2,27 +2,32 @@
 
 ## Section A
 # 1. Create the following list of items: Apples, Cherries, Pears, Pineapple, Peaches, Mango. Then print the list.
-
+items = ["Apples", "Cherries", "Pears", "Pineapple", "Peaches", "Mango"]
+print(items)
 
 
 # 2. Add "Grapes" to the list and print the list.
-
+items.append("Grapes")
+print(items)
 
 
 # 3. Change "Pears" to "Strawberries" and print the list.
-
+items[2] = "Strawberries"
+print(items)
 
 
 # 4. Remove "Apples" from the list and print the list.
-
+del(items[0])
+print(items)
 
 
 # 5. Print out the current length of the list.
-
+print(len(items))
 
 
 # 6. Order the list alphabetically.
-
+items.sort()
+print(items)
 
 
 # 7. Print out the list again.
@@ -34,22 +39,30 @@
 
 ## Section B
 # 1. Loop through the list you created in section A and print each item out.
-
+for fruit in items:
+  print(fruit)
 
 
 # 2. Print the numbers 1 to 100 (including the number 100).
 
+# for n in range(1,101):
+#   print(n)
 
 
 # 3. Print all odd numbers from 1 to 100.
-
+# for n in range(1,100,2):
+#   print(n)
 
 
 # 4. The modern olympics started in 1896, print the years they have been held (bonus points to skip the years it has not been held 1916, 1940, 1944, 2020).
-
+not_held = [1916,1940,1944,2020]
+for n in range(1896, 2023, 4):
+  if not(n in not_held):
+    print(n)
 
 
 # 5. Create a list of ten random numbers. Loop through your list and count the number of even numbers and the number of odd numbers.
+
 
 
 
