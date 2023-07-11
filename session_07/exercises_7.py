@@ -2,15 +2,21 @@
 
 ## Section A
 # 1. Write a function that prints your name
-
+def print_name(input_name):
+  print(input_name)
+print_name("Ben")
 
 
 # 2. Write a function that accepts a name as a parameter and prints "Hello, <name>".
 
-
+def hello_name(input_name):
+  print("Hello " + input_name)
+hello_name("Ben")
 
 # 3. Loop through the list ["Alice", "Bob", "Charlie"] and call the function you just wrote.
-
+names = ["Alice", "Bob", "Charlie"]
+for name in names:
+  hello_name(name)
 
 
 # 4. Write a function that prints the area of two passed in parameters.
@@ -38,8 +44,12 @@
 
 
 # 2. Write a function that accepts a word and returns it backwards, e.g. 'hello' -> 'olleh'.
-
-
+def backwards_word(input_word):
+  str = ""
+  for i in range(len(input_word)-1,-1,-1):
+    str += input_word[i]
+  print(str)
+backwards_word("backwards")
 
 # 3. Write a recursive function that accepts a number and prints that number of stars, followed by ever decreasing stars on each line, E.g:
 # ```
@@ -49,7 +59,17 @@
 # **
 # *
 # ```
-
+def recursive_stars(num):
+  str = ""
+  for i in range(num,0,-1):
+    str += "*"
+  print(str)
+  if num==1:
+    return
+  else:
+    recursive_stars(num-1)
+recursive_stars(5)
+  
 
 
 # 4. Create a padlock function. You need to be able to pass in a passcode and if its correct it should return "Unlock", else "Locked".
